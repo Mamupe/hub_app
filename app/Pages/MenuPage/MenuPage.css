@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+
+  .pokediv {
+    display: flex;
+    text-align: center;
+   justify-content: center;
+   align-items: center;
+   align-content: center;
+   font-size: larger;
+   width: 13rem;
+   height: 13rem;
+   border-color: black;
+  }
+
+  .pokebtn {
+    width: 13rem;
+    height: 13rem;
+    border:20px black;
+  }
+
+  .imgpok{
+    width: 13rem;
+    height: 13rem;
+    
+  }
+
