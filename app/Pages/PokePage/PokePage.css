@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-evenly;
     align-content:flex-start;
-   
+   margin: 5rem;
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2rem;
@@ -16,19 +16,20 @@
     display: flex;
     justify-content: center;
     padding: 1rem;
-    align-items: flex-start;
+    align-items: center;
     flex-direction:column;
-    height: 10rem;
-    width: 10rem;
+    height: 20rem;
+    width: 14rem;
     font-size: small;
-    border: 1px solid black;
-    
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: gold;
    
     
 
 }
 
 img {
-    height: 5rem;
-    width: 5rem;
+    height: 14rem;
+    width: 9rem;
 }

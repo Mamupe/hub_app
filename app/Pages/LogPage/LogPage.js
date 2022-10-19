@@ -5,10 +5,13 @@ export const login = () => {
 
   app.innerHTML = `
     <div class="divlog">
-    <h1>GAMES HUB</h1>
-    <label for="inputName">Introduce tu nombre</label>
-    <input type="text" id="inputName" required/>
-    <button type="button" id="savebtn">Ok!</button>
+    <div class="titulo">
+    <h1>Games Hub</h1>
+    </div>
+    <label class="label" for="inputName">Introduce tu nombre</label>
+    <input type="text" class="inputlog" id="inputName" required/>
+    <button type="button" class="btnlog" id="savebtn">Ok!</button>
+    <img class="marioGif" src="https://res.cloudinary.com/dghnwllrc/image/upload/v1666185708/mario_gif_facy0s.gif"/>
     </div>
     `;
   const saveLocalName = () => {

@@ -1,11 +1,39 @@
 .divlog {
     display: flex;
-     text-align: center;
+    flex-direction: column;
+    text-align: center;
     justify-content: center;
     align-items: center;
     align-content: center;
     font-size: larger;
-  
     
+    height: 90vh;
+}
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=Mina:wght@400;700&family=Silkscreen&display=swap');
+@font-face {
+  font-family: 'Chakra Petch', sans-serif;
+  src: url("/app/public/Fonts/ChakraPetch-Regular.ttf")
 }
 
+.titulo {
+    margin: 4rem;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.label {
+    gap: 3rem;
+}
+
+.inputlog {
+    margin:1rem;
+}
+
+.btnlog {
+    background-color: rgb(31, 206, 31);
+}
+
+.marioGif {
+    height: 400px;
+    width: 250px;
+    margin-bottom: 6rem;
+}

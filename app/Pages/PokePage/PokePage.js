@@ -48,7 +48,7 @@ app.appendChild(pokeCont);
         <div class="card">
           <h1>${item.name}</h1>
           <img src=${item.image} alt=${item.name}/>
-          <h2>Tipo: ${item.type}  Exp: ${item.experience}</h2>
+          <h2>Tipo: ${item.type} || Exp: ${item.experience}</h2>
           </div>
         
           `;
