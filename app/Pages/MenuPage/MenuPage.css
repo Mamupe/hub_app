@@ -1,17 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-li {
-  list-style-type: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+@font-face {
+  font-family: 'Orbitron', sans-serif;
+  src: url("./public/Fonts/Orbitron-Black.ttf")
+}  
 
 #app {
   align-content: center;
@@ -30,6 +21,11 @@ li {
   position: relative;
   top: -200px;
   left: 123px;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.pokediv > h3 {
+    font-family: 'Orbitron', sans-serif;
 }
 
 .pokediv {
@@ -47,8 +43,8 @@ li {
 }
 
 .pokebtn {
-  width: 13rem;
-  height: 13rem;
+  width: 15rem;
+  height: 15rem;
   border: 5px solid black;
 }
 

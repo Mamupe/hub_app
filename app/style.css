@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&family=Mina:wght@400;700&family=Silkscreen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
 @font-face {
-  font-family: 'Chakra Petch', sans-serif;
-  src: url("/app/public/Fonts/ChakraPetch-Regular.ttf")
+  font-family: 'Orbitron', sans-serif;
+  src: url("./public/Fonts/Orbitron-Black.ttf")
+}  
+
   
-}
+
 
 * {
   margin: 0;

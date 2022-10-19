@@ -24,7 +24,8 @@
     border: 3px solid black;
     border-radius: 10px;
     background-color: gold;
-   
+    font-family: 'Orbitron', sans-serif;
+
     
 
 }
@@ -32,4 +33,26 @@
 img {
     height: 14rem;
     width: 9rem;
+}
+
+.pokeCont > .card > h2 {
+    font-size: small;
+}
+
+.buscador {
+    margin: 1rem;
+    width: 15rem;
+    
+    
+    
+}
+
+.buscadorBtn {
+width: 3rem;
+height: 1.5rem;
+margin: 1rem;
+position: relative;
+top: 1px;
+
+
 }
