@@ -1,5 +1,5 @@
 import { cleanPage } from "../../Utils/cleanPage";
-
+import "./PokePage.css"
 
 export const getPokemon = async (i) => {
   const app = document.querySelector("#app")
@@ -29,27 +29,34 @@ const transformData = (list) => {
         experience: item.base_experience,
         type: item.types[0].type.name,
       }));
-      console.log(mappedPokemon);
-      //printPokemon(mappedPokemon);
+      //console.log(mappedPokemon);
+      printPokemon(mappedPokemon);
 
     };
-/*     const printPokemon = (list) => {
-         const app = document.querySelector("#app");
-      
-        for (let i = 1; i < 151; i++) {
-          const item = list[i]; 
-          const template = `
-          <figure>
-          <h2>${item.name} - ${item.type}</h2>
-          <img src=${item.image} alt=${item.name}/>
-          <h3>${item.experience}</h3>
-          </figure>
-          `;
-          app.innerHTML += template;
-        }
-      };
+ /*    const pokeCont = document.createElement("div");
+        app.appenChild(pokeCont); */
 
-getPokemon(); */
+
+const printPokemon = (list) => {
+    const app = document.querySelector("#app");
+const pokeCont = document.createElement("div");
+pokeCont.classList.add("pokeCont")
+app.appendChild(pokeCont);
+    for (const item of list) {
+        const template = `
+         
+        <div class="card">
+          <h1>${item.name}</h1>
+          <img src=${item.image} alt=${item.name}/>
+          <h2>Tipo: ${item.type}  Exp: ${item.experience}</h2>
+          </div>
+        
+          `;
+          pokeCont.innerHTML += template;
+          
+    }
+};
+
 
 
 

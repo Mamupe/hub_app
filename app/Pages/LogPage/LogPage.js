@@ -1,4 +1,4 @@
-import "./Logpage.css";
+import "./LogPage.css";
 import { menuPage } from "../MenuPage/MenuPage";
 export const login = () => {
   const app = document.querySelector("#app");
@@ -14,6 +14,8 @@ export const login = () => {
   const saveLocalName = () => {
     localStorage.setItem("name", input.value);
     menuPage();
+
+    
   };
   const savebtn = document.querySelector("#savebtn");
   const input = document.querySelector("input");
