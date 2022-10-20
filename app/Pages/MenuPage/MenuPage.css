@@ -4,24 +4,24 @@
   src: url("./public/Fonts/Orbitron-Black.ttf")
 }  
 
-#app {
+/* #app {
+  justify-items: center;
   align-content: center;
-}
+} */
 
 .divhub {
+  margin: 5rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
+ 
   align-content: center;
   height: 90vh;
 }
 
-.divhub > h2 {
-  position: relative;
-  top: -200px;
-  left: 123px;
-  font-family: 'Orbitron', sans-serif;
+.bienve {
+font-family: 'Orbitron', sans-serif;
+margin: 5rem;
 }
 
 .pokediv > h3 {
@@ -45,10 +45,12 @@
 .pokebtn {
   width: 15rem;
   height: 15rem;
-  border: 5px solid black;
+  border: 3px solid rgb(225, 9, 9);
+  background-color: black;
 }
 
 .imgpok {
   width: 12.5rem;
   height: 12.5rem;
+  
 }

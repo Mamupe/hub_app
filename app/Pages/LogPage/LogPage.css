@@ -25,6 +25,9 @@
 
 .label {
     gap: 3rem;
+    font-family: 'Orbitron', sans-serif;
+    font-size: smaller;
+
 }
 
 .inputlog {

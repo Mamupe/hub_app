@@ -5,8 +5,9 @@ export const menuPage = () => {
   const app = document.querySelector("#app");
   cleanPage(app);
   app.innerHTML = `
+  <h2 class="bienve">Bienvenido ${localStorage.name}</h2>
   <div class="divhub">
-  <h2>Bienvenido ${localStorage.name}</h2>
+  
   <div class="pokediv">
   <button type="button" class="pokebtn" id="pokebtn"><img src="https://res.cloudinary.com/dghnwllrc/image/upload/v1666096687/pokemon-logo-png-1446_gx5vzd.jpg" class="imgpok"/></button>
   

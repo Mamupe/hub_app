@@ -15,8 +15,9 @@ export const getPokemon = async (i) => {
     }
   }
   transformData(pokemonarray);
+  //console.log(transformData(pokemonarray));
 };
-
+let pokeSelec;
 const transformData = (list) => {
   const mappedPokemon = list.map((item) => ({
     id: item.id,
@@ -30,6 +31,8 @@ const transformData = (list) => {
   }));
   //console.log(mappedPokemon);
   printPokemon(mappedPokemon);
+  pokeSelec = mappedPokemon;
+  
 };
 /*    const pokeCont = document.createElement("div");
         app.appenChild(pokeCont); */
@@ -40,9 +43,9 @@ const printPokemon = (list) => {
   search.classList.add("buscador");
   app.appendChild(search);
   const searchbtn = document.createElement("button")
-  searchbtn.classList.add("buscadorBtn");
+  /* searchbtn.classList.add("buscadorBtn");
   searchbtn.innerText = "Go";
-  app.appendChild(searchbtn);
+  app.appendChild(searchbtn); */
   const pokeCont = document.createElement("div");
   pokeCont.classList.add("pokeCont");
   app.appendChild(pokeCont);
@@ -53,10 +56,60 @@ const printPokemon = (list) => {
         <div class="card">
           <h1>${item.name}</h1>
           <img src=${item.image} alt=${item.name}/>
-          <h2>Tipo: ${item.type} || Exp: ${item.experience}</h2>
+          <h2>Tipo: ${item.type} || Exp: ${item.experience}<br>
+          Pes: ${item.weight} || Alt: ${item.height}
+          </h2>
           </div>
         
           `;
     pokeCont.innerHTML += template;
-  }
+  };
+  
+  const pokebusca = document.querySelector(".buscador");
+  const pokesFilter = (word) => {
+      const pokeFilter = pokeSelec.filter((item) =>{
+          return item.name.toLowerCase().includes(word.toLowerCase())
+      });
+      cleanPage(pokeCont);
+  
+      for (const item of pokeFilter) {
+          pokeCont.innerHTML += `
+          <div class="card">
+          <h1>${item.name}</h1>
+          <img src=${item.image} alt=${item.name}/>
+          <h2>Tipo: ${item.type} || Exp: ${item.experience}<br>
+          Pes: ${item.weight} || Alt: ${item.height}
+          </h2>
+          </div>
+        
+          `;
+      }
+      return pokeFilter
+  };
+  
+  pokebusca.addEventListener("input", (ev)=> pokesFilter(pokebusca.value)) 
+
+
+
 };
+
+
+
+
+/*   const filterContainer = document.querySelector(".pokeCont");
+  const pokebusca = document.querySelector(".buscador");
+  const pokesFilter = (word) => {
+      const pokeFilter = mappedPokemon.filter((item) =>{
+          return item.name.toLowerCase().includes(word.toLowerCase())
+      });
+      cleanPage(filterContainer);
+  
+      for (const item of pokeFilter) {
+          filterContainer.innerHTML = `
+          <img src="${item.image}"/>
+          `
+      }
+      return pokeFilter
+  };
+  
+  pokebusca.addEventListener(".buscador", (ev)=> pokesFilter(input.value)) */

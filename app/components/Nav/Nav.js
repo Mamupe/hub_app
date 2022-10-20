@@ -8,4 +8,5 @@ export const changeColor = () => {
   themeBtn.addEventListener("click", randomColor); 
 
 };
-
+/* const header = document.querySelector("header")
+const ancord = document.createElement("a") */

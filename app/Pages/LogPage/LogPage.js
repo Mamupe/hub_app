@@ -1,5 +1,7 @@
 import "./LogPage.css";
 import { menuPage } from "../MenuPage/MenuPage";
+
+
 export const login = () => {
   const app = document.querySelector("#app");
 
