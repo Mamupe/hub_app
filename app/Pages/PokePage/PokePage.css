@@ -8,7 +8,7 @@
   gap: 2rem;
 }
 
-.pokeCont > .card {
+.pokeCont > #pokeCard {
   display: flex;
   justify-content: center;
   padding: 1rem;
@@ -19,8 +19,62 @@
   font-size: small;
   border: 3px solid black;
   border-radius: 10px;
-  background-color: gold;
+  text-transform: capitalize;
   font-family: "Orbitron", sans-serif;
+  text-align: center;
+}
+
+.grass {
+  background-color: #4A9681;
+}
+
+.electric {
+  background-color: #ffea70;
+}
+.normal {
+  background-color: #b09398;
+}
+.fire {
+  background-color: #ff675c;
+}
+.water {
+  background-color: #0596c7;
+}
+.ice {
+  background-color: #afeafd;
+}
+.rock {
+  background-color: #999799;
+}
+.flying {
+  background-color: #7ae7c7;
+}
+.psychic {
+  background-color: #ffc6d9;
+}
+.ghost {
+  background-color: #561d25;
+}
+.bug {
+  background-color: #a2faa3;
+}
+.poison {
+  background-color: #795663;
+}
+.ground {
+  background-color: #d2b074;
+}
+.dragon {
+  background-color: #da627d;
+}
+.steel {
+  background-color: #1d8a99;
+}
+.fighting {
+  background-color: #2f2f2f;
+}
+.default {
+  background-color: #2a1a1f;
 }
 
 img {
@@ -28,7 +82,7 @@ img {
   width: 9rem;
 }
 
-.pokeCont > .card > h2 {
+.pokeCont > #pokeCard > h2 {
   font-size: small;
   text-align: center;
 }
@@ -39,8 +93,8 @@ img {
 }
 
 .buscadorBtn {
-    float: right
-/*   width: 3rem;
+  width: 70px;
   height: 1.5rem;
-  margin: 1rem; */
+  background-color: crimson;
+  float: right;
 }

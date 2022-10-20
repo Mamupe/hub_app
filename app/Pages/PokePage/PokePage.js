@@ -16,7 +16,7 @@ export const getPokemon = async (i) => {
     }
   }
   transformData(pokemonarray);
-  //console.log(transformData(pokemonarray));
+  
 };
 let pokeSelec;
 const transformData = (list) => {
@@ -33,28 +33,31 @@ const transformData = (list) => {
   //console.log(mappedPokemon);
   printPokemon(mappedPokemon);
   pokeSelec = mappedPokemon;
-  
+
 };
-/*    const pokeCont = document.createElement("div");
-        app.appenChild(pokeCont); */
+
 
 const printPokemon = (list) => {
   const app = document.querySelector("#app");
   const search = document.createElement("input");
   search.classList.add("buscador");
   app.appendChild(search);
+
+
+  /* app.appendChild(saludo); */
   const searchbtn = document.createElement("button")
   searchbtn.classList.add("buscadorBtn");
-  searchbtn.innerText = "Back";
+  searchbtn.innerText = "<<<Back";
   app.appendChild(searchbtn);
   const pokeCont = document.createElement("div");
   pokeCont.classList.add("pokeCont");
   app.appendChild(pokeCont);
 
   for (const item of list) {
+   
     const template = `
          
-        <div class="card">
+        <div id="pokeCard" class="${item.type}">
           <h1>${item.name}</h1>
           <img src=${item.image} alt=${item.name}/>
           <h2>Tipo: ${item.type} || Exp: ${item.experience}<br>
@@ -75,7 +78,7 @@ const printPokemon = (list) => {
   
       for (const item of pokeFilter) {
           pokeCont.innerHTML += `
-          <div class="card">
+          <div id="pokeCard" class="${item.type}">
           <h1>${item.name}</h1>
           <img src=${item.image} alt=${item.name}/>
           <h2>Tipo: ${item.type} || Exp: ${item.experience}<br>
@@ -98,20 +101,3 @@ bacToMenu.addEventListener("click", () => menuPage());
 
 
 
-/*   const filterContainer = document.querySelector(".pokeCont");
-  const pokebusca = document.querySelector(".buscador");
-  const pokesFilter = (word) => {
-      const pokeFilter = mappedPokemon.filter((item) =>{
-          return item.name.toLowerCase().includes(word.toLowerCase())
-      });
-      cleanPage(filterContainer);
-  
-      for (const item of pokeFilter) {
-          filterContainer.innerHTML = `
-          <img src="${item.image}"/>
-          `
-      }
-      return pokeFilter
-  };
-  
-  pokebusca.addEventListener(".buscador", (ev)=> pokesFilter(input.value)) */
