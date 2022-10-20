@@ -36,12 +36,12 @@ const transformData = (list) => {
 
 const printPokemon = (list) => {
   const app = document.querySelector("#app");
-  app.innerHTML = ` <h2 class="bienven">Bienvenido a la Pokeapi ${localStorage.name}</h2>`;
+  app.innerHTML = ` <h2 class="bienven">Bienvenido a la Pokeapi, ${localStorage.name}</h2>`;
   const search = document.createElement("input");
   search.classList.add("buscador");
   app.appendChild(search);
-const selecClass = document.createElement("select");
-app.appendChild(selecClass);
+  const selecClass = document.createElement("select");
+  app.appendChild(selecClass);
   const searchbtn = document.createElement("button");
   searchbtn.classList.add("buscadorBtn");
   searchbtn.innerText = "<<<Back";
@@ -91,4 +91,11 @@ app.appendChild(selecClass);
 
   const bacToMenu = document.querySelector(".buscadorBtn");
   bacToMenu.addEventListener("click", () => menuPage());
+
+  /*   const selection = document.querySelector("select");
+  const desplegable = () => {
+    const selec = pokeSelec.filter((item) => {
+        return item.type
+    })
+  } */
 };
