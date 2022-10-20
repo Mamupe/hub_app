@@ -16,7 +16,6 @@ export const getPokemon = async (i) => {
     }
   }
   transformData(pokemonarray);
-  
 };
 let pokeSelec;
 const transformData = (list) => {
@@ -33,19 +32,17 @@ const transformData = (list) => {
   //console.log(mappedPokemon);
   printPokemon(mappedPokemon);
   pokeSelec = mappedPokemon;
-
 };
-
 
 const printPokemon = (list) => {
   const app = document.querySelector("#app");
+  app.innerHTML = ` <h2 class="bienven">Bienvenido a la Pokeapi ${localStorage.name}</h2>`;
   const search = document.createElement("input");
   search.classList.add("buscador");
   app.appendChild(search);
-
-
-  /* app.appendChild(saludo); */
-  const searchbtn = document.createElement("button")
+const selecClass = document.createElement("select");
+app.appendChild(selecClass);
+  const searchbtn = document.createElement("button");
   searchbtn.classList.add("buscadorBtn");
   searchbtn.innerText = "<<<Back";
   app.appendChild(searchbtn);
@@ -54,7 +51,6 @@ const printPokemon = (list) => {
   app.appendChild(pokeCont);
 
   for (const item of list) {
-   
     const template = `
          
         <div id="pokeCard" class="${item.type}">
@@ -67,17 +63,17 @@ const printPokemon = (list) => {
         
           `;
     pokeCont.innerHTML += template;
-  };
-  
+  }
+
   const pokebusca = document.querySelector(".buscador");
   const pokesFilter = (word) => {
-      const pokeFilter = pokeSelec.filter((item) =>{
-          return item.name.toLowerCase().includes(word.toLowerCase())
-      });
-      cleanPage(pokeCont);
-  
-      for (const item of pokeFilter) {
-          pokeCont.innerHTML += `
+    const pokeFilter = pokeSelec.filter((item) => {
+      return item.name.toLowerCase().includes(word.toLowerCase());
+    });
+    cleanPage(pokeCont);
+
+    for (const item of pokeFilter) {
+      pokeCont.innerHTML += `
           <div id="pokeCard" class="${item.type}">
           <h1>${item.name}</h1>
           <img src=${item.image} alt=${item.name}/>
@@ -87,17 +83,12 @@ const printPokemon = (list) => {
           </div>
         
           `;
-      }
-      return pokeFilter
+    }
+    return pokeFilter;
   };
-  
-  pokebusca.addEventListener("input", (ev)=> pokesFilter(pokebusca.value)) 
 
-const bacToMenu = document.querySelector(".buscadorBtn");
-bacToMenu.addEventListener("click", () => menuPage());
+  pokebusca.addEventListener("input", (ev) => pokesFilter(pokebusca.value));
 
+  const bacToMenu = document.querySelector(".buscadorBtn");
+  bacToMenu.addEventListener("click", () => menuPage());
 };
-
-
-
-

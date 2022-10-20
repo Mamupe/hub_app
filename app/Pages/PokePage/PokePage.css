@@ -1,3 +1,6 @@
+.bienven {
+    font-family: "Orbitron", sans-serif;
+}
 .pokeCont {
   display: flex;
   justify-content: space-evenly;
