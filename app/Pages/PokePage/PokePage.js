@@ -1,4 +1,5 @@
 import { cleanPage } from "../../Utils/cleanPage";
+import { menuPage } from "../MenuPage/MenuPage";
 import "./PokePage.css";
 
 export const getPokemon = async (i) => {
@@ -43,9 +44,9 @@ const printPokemon = (list) => {
   search.classList.add("buscador");
   app.appendChild(search);
   const searchbtn = document.createElement("button")
-  /* searchbtn.classList.add("buscadorBtn");
-  searchbtn.innerText = "Go";
-  app.appendChild(searchbtn); */
+  searchbtn.classList.add("buscadorBtn");
+  searchbtn.innerText = "Back";
+  app.appendChild(searchbtn);
   const pokeCont = document.createElement("div");
   pokeCont.classList.add("pokeCont");
   app.appendChild(pokeCont);
@@ -89,7 +90,8 @@ const printPokemon = (list) => {
   
   pokebusca.addEventListener("input", (ev)=> pokesFilter(pokebusca.value)) 
 
-
+const bacToMenu = document.querySelector(".buscadorBtn");
+bacToMenu.addEventListener("click", () => menuPage());
 
 };
 

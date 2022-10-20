@@ -1,57 +1,46 @@
 .pokeCont {
-    display: flex;
-    justify-content: space-evenly;
-    align-content:flex-start;
-   margin: 5rem;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2rem;
-   
+  display: flex;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  margin: 5rem;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2rem;
 }
 
-
-
 .pokeCont > .card {
-    
-    display: flex;
-    justify-content: center;
-    padding: 1rem;
-    align-items: center;
-    flex-direction:column;
-    height: 20rem;
-    width: 14rem;
-    font-size: small;
-    border: 3px solid black;
-    border-radius: 10px;
-    background-color: gold;
-    font-family: 'Orbitron', sans-serif;
-
-    
-
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  align-items: center;
+  flex-direction: column;
+  height: 20rem;
+  width: 14rem;
+  font-size: small;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: gold;
+  font-family: "Orbitron", sans-serif;
 }
 
 img {
-    height: 14rem;
-    width: 9rem;
+  height: 14rem;
+  width: 9rem;
 }
 
 .pokeCont > .card > h2 {
-    font-size: small;
-    text-align: center;
+  font-size: small;
+  text-align: center;
 }
 
 .buscador {
-    margin: 1rem;
-    width: 15rem;
-    
-    
-    
+  margin: 1rem;
+  width: 15rem;
 }
 
-/* .buscadorBtn {
-width: 3rem;
-height: 1.5rem;
-margin: 1rem;
-position: relative;
-top: 1px;
-} */
+.buscadorBtn {
+    float: right
+/*   width: 3rem;
+  height: 1.5rem;
+  margin: 1rem; */
+}
