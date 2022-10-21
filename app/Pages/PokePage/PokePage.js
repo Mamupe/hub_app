@@ -42,10 +42,10 @@ const printPokemon = (list) => {
   app.appendChild(search);
   const selecClass = document.createElement("select");
   app.appendChild(selecClass);
-  const searchbtn = document.createElement("button");
-  searchbtn.classList.add("buscadorBtn");
-  searchbtn.innerText = "<<<Back";
-  app.appendChild(searchbtn);
+  const backbtn = document.createElement("button");
+  backbtn.classList.add("backBtn");
+  backbtn.innerText = "<<<Back";
+  app.appendChild(backbtn);
   const pokeCont = document.createElement("div");
   pokeCont.classList.add("pokeCont");
   app.appendChild(pokeCont);
@@ -89,13 +89,11 @@ const printPokemon = (list) => {
 
   pokebusca.addEventListener("input", (ev) => pokesFilter(pokebusca.value));
 
-  const bacToMenu = document.querySelector(".buscadorBtn");
+  const bacToMenu = document.querySelector(".backBtn");
   bacToMenu.addEventListener("click", () => menuPage());
 
-  /*   const selection = document.querySelector("select");
-  const desplegable = () => {
-    const selec = pokeSelec.filter((item) => {
-        return item.type
-    })
-  } */
+  const selection = document.querySelector("select");
+  const option = document.createElement("option");
+  selection.appendChild(option);
+ 
 };

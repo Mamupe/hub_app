@@ -14,7 +14,7 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
- 
+  justify-content: center;
   align-content: center;
   height: 90vh;
 }
@@ -29,6 +29,7 @@ margin: 5rem;
 }
 
 .pokediv {
+    padding-right: 3rem;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -45,12 +46,39 @@ margin: 5rem;
 .pokebtn {
   width: 15rem;
   height: 15rem;
-  border: 3px solid rgb(225, 9, 9);
-  background-color: black;
+ /*  border: 3px solid rgb(225, 9, 9);
+  background-color: black; */
+  background-image: url(https://res.cloudinary.com/dghnwllrc/image/upload/v1666096687/pokemon-logo-png-1446_gx5vzd.jpg);
+  background-size: contain;
+  border: solid 3px black;
 }
 
-.imgpok {
-  width: 12.5rem;
-  height: 12.5rem;
-  
+.quizDiv > h3 {
+    font-family: 'Orbitron', sans-serif;
 }
+
+.quizDiv {
+    padding-left: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: larger;
+  width: 15rem;
+  height: 15rem;
+}
+
+.quizbtn {
+    width: 15rem;
+    height: 15rem;
+   /*  border: 3px solid rgb(225, 9, 9);
+    background-color: black; */
+    background-image: url(https://res.cloudinary.com/dghnwllrc/image/upload/v1666356296/quiz_yj0iqa.jpg);
+    background-size: contain;
+    border: solid 3px black;
+  }
+
+

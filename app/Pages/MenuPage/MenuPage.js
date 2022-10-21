@@ -1,6 +1,8 @@
+
 import { cleanPage } from "../../Utils/cleanPage";
 import "./MenuPage.css";
 import { getPokemon } from "../PokePage/PokePage";
+import { quizPage } from "../QuizzPage/QuizzPage";
 export const menuPage = () => {
   const app = document.querySelector("#app");
   cleanPage(app);
@@ -9,13 +11,19 @@ export const menuPage = () => {
   <div class="divhub">
   
   <div class="pokediv">
-  <button type="button" class="pokebtn" id="pokebtn"><img src="https://res.cloudinary.com/dghnwllrc/image/upload/v1666096687/pokemon-logo-png-1446_gx5vzd.jpg" class="imgpok"/></button>
-  
+  <button type="button" class="pokebtn" id="pokebtn"></button>
   <h3>Pokeapi</h3>
+  </div>
+
+  <div class="quizDiv">
+  <button type="button" class="quizbtn" id="quizbtn"></button>
+  <h3>Quiz Game</h3>
   </div>
 
   </div>
   `;
   const pokebtn = document.querySelector("#pokebtn");
-  pokebtn.addEventListener("click", () => getPokemon())
+  pokebtn.addEventListener("click", () => getPokemon());
+  const quizbtn = document.querySelector("#quizbtn");
+  quizbtn.addEventListener("click", () => quizPage());
 };
