@@ -3,6 +3,7 @@ import { cleanPage } from "../../Utils/cleanPage";
 import "./MenuPage.css";
 import { getPokemon } from "../PokePage/PokePage";
 import { quizPage } from "../QuizzPage/QuizzPage";
+import { topoPage } from "../TopoPage/TopoPage";
 export const menuPage = () => {
   const app = document.querySelector("#app");
   cleanPage(app);
@@ -20,10 +21,17 @@ export const menuPage = () => {
   <h3>Quiz Game</h3>
   </div>
 
+  <div class="topoDiv">
+  <button type="button" class="topoBtn" id="topoBtn"></button>
+  <h3>Topo Game</h3>
+  </div>
+
   </div>
   `;
   const pokebtn = document.querySelector("#pokebtn");
   pokebtn.addEventListener("click", () => getPokemon());
   const quizbtn = document.querySelector("#quizbtn");
   quizbtn.addEventListener("click", () => quizPage());
+  const topoBtn = document.querySelector("#topoBtn");
+  topoBtn.addEventListener("click", () => topoPage());
 };

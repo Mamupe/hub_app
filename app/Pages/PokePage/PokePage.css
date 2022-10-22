@@ -103,4 +103,5 @@ img {
   height: 1.5rem;
   background-color: crimson;
   float: right;
+  cursor: pointer;
 }

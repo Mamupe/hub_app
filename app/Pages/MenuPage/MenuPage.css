@@ -16,7 +16,7 @@
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  height: 90vh;
+  height: 80vh;
 }
 
 .bienve {
@@ -51,6 +51,7 @@ margin: 5rem;
   background-image: url(https://res.cloudinary.com/dghnwllrc/image/upload/v1666096687/pokemon-logo-png-1446_gx5vzd.jpg);
   background-size: contain;
   border: solid 3px black;
+  cursor: pointer;
 }
 
 .quizDiv > h3 {
@@ -79,6 +80,38 @@ margin: 5rem;
     background-image: url(https://res.cloudinary.com/dghnwllrc/image/upload/v1666356296/quiz_yj0iqa.jpg);
     background-size: contain;
     border: solid 3px black;
+    cursor: pointer;
   }
+
+  .topoDiv > h3 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+.topoDiv {
+    padding-left: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  font-size: larger;
+  width: 15rem;
+  height: 15rem;
+}
+
+.topoBtn {
+    width: 15rem;
+    height: 15rem;
+   /*  border: 3px solid rgb(225, 9, 9);
+    background-color: black; */
+    background-image: url(https://res.cloudinary.com/dghnwllrc/image/upload/v1666426862/topo_abxyhq.jpg);
+    
+    background-size: contain;
+    border: solid 3px black;
+    cursor: pointer;
+  }
+
 
 

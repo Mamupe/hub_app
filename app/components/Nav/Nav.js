@@ -1,5 +1,6 @@
 import "./Nav.css"
 import { randomColor } from "../../Utils/randomcolor.js";
+import { login } from "../../Pages/LogPage/LogPage";
 export const changeColor = () => {
   const themeBtn = document.createElement("button");
   themeBtn.innerText = "Color🌈";
@@ -8,5 +9,11 @@ export const changeColor = () => {
   themeBtn.addEventListener("click", randomColor); 
 
 };
-/* const header = document.querySelector("header")
-const ancord = document.createElement("a") */
+
+export const logout = () => {
+  const logoutBtn = document.createElement("button");
+  logoutBtn.innerText = "Logout";
+  const header = document.querySelector("header")
+  header.appendChild(logoutBtn);
+  logoutBtn.addEventListener("click", () => login());
+}

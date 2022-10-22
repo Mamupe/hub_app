@@ -1,0 +1,84 @@
+.topoContainer {
+    margin: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: 80vh;
+}
+
+
+.score {
+    padding: 0 48px;
+    line-height: 1;
+    border-radius: 16px;
+    color: rgb(15, 41, 185);
+    margin-left: 15px;
+    border: 2px solid black;
+    background-color: cornsilk;
+  }
+
+  #startGame {
+    background-color: rgb(17, 213, 17);
+    cursor: pointer;
+  }
+  
+  .game {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-image: url("https://res.cloudinary.com/dghnwllrc/image/upload/v1666431484/grass_lu5cbb.png");
+    cursor: cell;
+  }
+  
+  .hole {
+    flex: 1 0 33.33%;
+    overflow: hidden;
+    position: relative;
+    
+    
+  }
+  
+  .hole:after {
+    display: block;
+    display: block;
+    background: url("https://res.cloudinary.com/dghnwllrc/image/upload/v1666430347/hole_1_ppuznq.png")
+      bottom center no-repeat;
+    background-size: 100%;
+    content: "";
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    z-index: 2;
+    bottom: -30px;
+  }
+  
+  .mole {
+    background: url("https://res.cloudinary.com/dghnwllrc/image/upload/v1666430051/mole_mxudlg.png")
+      bottom center no-repeat;
+    background-size: 80%;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s;
+  }
+  
+  .hole.up .mole {
+    top: 0;
+  }
+  
+  .interface {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 1rem;
+    font-family: 'Orbitron', sans-serif;
+   
+  }
+  

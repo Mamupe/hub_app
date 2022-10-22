@@ -15,5 +15,6 @@ button{
     width: 4rem;
     background-color:antiquewhite;
     font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
     
 }

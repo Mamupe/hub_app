@@ -38,6 +38,7 @@
 .btnlog {
     background-color: rgb(31, 206, 31);
     font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
 }
 
 .marioGif {
