@@ -96,6 +96,8 @@ img {
 .buscador {
   margin: 1rem;
   width: 15rem;
+  border-radius: 4px;
+  font-family: "Orbitron", sans-serif;
 }
 
 .backBtn {
@@ -105,3 +107,17 @@ img {
   float: right;
   cursor: pointer;
 }
+
+#app > select {
+  border: 1px solid rgb(14, 14, 14);
+  width: 110px;
+  overflow: hidden;
+  background-color: #fff;
+  cursor: pointer;
+  font-family: "Orbitron", sans-serif;
+  border-radius: 4px;
+  
+  
+}
+
+

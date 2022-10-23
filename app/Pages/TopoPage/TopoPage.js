@@ -97,7 +97,7 @@ const wack = (ev) => {
   if (!ev.isTrusted) return;
   score++;
   ev.target.parentNode.classList.remove("up");
-  console.log("ESTE ES", ev);
+
   document.querySelector(".score").textContent = score;
 };
 

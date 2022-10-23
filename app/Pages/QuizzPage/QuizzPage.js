@@ -149,15 +149,33 @@ export const quizPage = () => {
           { text: 'Sarajevo', correct: false }
         ]
       },
-  /*     {
-        question: '¿Qué océano es el más extenso',
+      {
+        question: '¿Qué océano es el más extenso?',
         answers: [
           { text: 'Pácifico', correct: true },
-          { text: 'Atlántico', correct: trflaseue },
+          { text: 'Atlántico', correct: false },
           { text: 'Índico', correct: false },
           { text: 'Ártico', correct: false }
         ]
-      } */
+      }, 
+      {
+        question: '¿Cuál es el estado mas grande de EEUU?',
+        answers: [
+          { text: 'California', correct: false },
+          { text: 'Nevada', correct: false },
+          { text: 'Texas', correct: false },
+          { text: 'Alaska', correct: true }
+        ]
+      }, 
+      {
+        question: '¿Qué canal une el mar Mediterráneo con el mar Rojo?',
+        answers: [
+          { text: 'Plus', correct: false },
+          { text: 'Gibraltar', correct: false },
+          { text: 'Suez', correct: true },
+          { text: 'Seth', correct: false }
+        ]
+      }
     ]
 
 

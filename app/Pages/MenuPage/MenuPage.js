@@ -8,6 +8,7 @@ export const menuPage = () => {
   const app = document.querySelector("#app");
   cleanPage(app);
   app.innerHTML = `
+ 
   <h2 class="bienve">Bienvenido ${localStorage.name}</h2>
   <div class="divhub">
   
@@ -27,6 +28,7 @@ export const menuPage = () => {
   </div>
 
   </div>
+  
   `;
   const pokebtn = document.querySelector("#pokebtn");
   pokebtn.addEventListener("click", () => getPokemon());
