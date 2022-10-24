@@ -12,11 +12,12 @@
 .score {
     padding: 0 48px;
     line-height: 1;
-    border-radius: 16px;
+    width: 10px;
+    border-radius: 2px;
     color: rgb(15, 41, 185);
     margin-left: 15px;
-    border: 2px solid black;
-    background-color: cornsilk;
+    border: 2px solid rgb(1, 7, 18);
+    background-color: rgb(151, 178, 17);
   }
 
   #startGame {
@@ -24,6 +25,19 @@
     cursor: pointer;
   }
   
+/*   @media only screen and (max-width: 300px) {
+    .game {
+      width: 275px;
+      height: 100px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      background-image: url("https://res.cloudinary.com/dghnwllrc/image/upload/v1666431484/grass_lu5cbb.png");
+      cursor: cell;
+      margin-bottom: 5rem;
+    }
+  } */
+
   .game {
     width: 600px;
     height: 400px;
@@ -32,6 +46,7 @@
     margin: 0 auto;
     background-image: url("https://res.cloudinary.com/dghnwllrc/image/upload/v1666431484/grass_lu5cbb.png");
     cursor: cell;
+    margin-bottom: 5rem;
   }
   
   .hole {
